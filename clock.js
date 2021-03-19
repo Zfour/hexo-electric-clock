@@ -34,12 +34,14 @@ fetch('http://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').th
             }else{
                 card_clock_dackorlight_str = " AM";
             }
+            if(document.getElementById('card-clock-time')){
             var card_clock_time_dom = document.getElementById('card-clock-time');
             var card_clock_date_dom = document.getElementById('card-clock-clockdate');
             var card_clock_dackorlight_dom = document.getElementById('card-clock-dackorlight');
             card_clock_time_dom.innerHTML= card_clock_time;
             card_clock_date_dom.innerHTML= card_clock_date;
             card_clock_dackorlight_dom.innerHTML= card_clock_dackorlight_str
+                }
         }
 
         function zeroPadding(num, digit) {
@@ -50,10 +52,10 @@ fetch('http://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').th
             return (zero + num).slice(-digit);
         }
         
-        if(document.getElementById('card-clock-time')){
+        
            var timerID = setInterval(updateTime, 1000);
            updateTime();
-           }
+           
        
 
         console.log(res_list)
