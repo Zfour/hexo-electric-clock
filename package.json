@@ -1,0 +1,22 @@
+{
+  "name": "hexo-electric-clock",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ice Kano",
+  "keywords": [
+    "hexo",
+    "plugin"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Zfour/hexo-electric-clock.git"
+  },
+  "devDependencies": {
+    "hexo": "^3.2.0"
+  }
+}
