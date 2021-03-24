@@ -21,6 +21,9 @@ padding:20px
     font-weight: 400;
     color: #000;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 .card-clock-clockdate,.card-clock-ip{
     text-align: left;
