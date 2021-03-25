@@ -62,8 +62,8 @@ function common_injector(name, item_comfig, temple_html_text, js_text, css_text)
 hexo.extend.filter.register('after_generate', function () {
     if (hexo.config.electric_clock.enable) {
         var electric_clock = hexo.config.electric_clock;
-        var css_text = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.3/clock.css">`;
-        var js_text = `<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.3/clock.js"></script>`
+        var css_text = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.4/clock.css">`;
+        var js_text = `<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.4/clock.js"></script>`
 
         common_injector('electric_clock', electric_clock, electric_clock.temple_html, js_text, css_text)
     }
