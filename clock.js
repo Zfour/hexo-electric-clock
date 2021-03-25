@@ -1,7 +1,7 @@
 console.log(returnCitySN["cip"])
 fetch('https://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').then(res=>res.text()).then(
     data => {
-        var res_text = data.replace(/"/g,'').replace(/\+/g,'').replace(/,/g,'\\').replace(/ /g,'').replace(/°C/g,'');
+        var res_text = data.replace(/not found/g,'not found,not found').replace(/"/g,'').replace(/\+/g,'').replace(/,/g,'\\').replace(/ /g,'').replace(/°C/g,'');
         res_list = res_text.split('\\');
         var clock_box = document.getElementById('hexo_electric_clock');
         clock_box_html = `  
