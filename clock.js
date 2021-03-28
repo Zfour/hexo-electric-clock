@@ -1,5 +1,5 @@
-console.log(returnCitySN["cip"])
-fetch('https://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').then(res=>res.text()).then(
+if(document.getElementById('hexo_electric_clock')){
+   fetch('https://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').then(res=>res.text()).then(
     data => {
         var res_text = data.replace(/not found/g,'not found,not found').replace(/"/g,'').replace(/\+/g,'').replace(/,/g,'\\').replace(/ /g,'').replace(/°C/g,'');
         res_list = res_text.split('\\');
@@ -62,3 +62,8 @@ fetch('https://wttr.in/'+returnCitySN["cip"]+'?format="%l+\\+%c+\\+%t+\\+%h"').t
 
     }
 )
+
+   
+   
+   }
+   
